@@ -1,0 +1,11 @@
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Screenshots locales
+*.screenshot.png
+sme-*.png
+
+# Playwright
+.playwright-mcp/
