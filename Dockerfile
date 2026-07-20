@@ -1,4 +1,3 @@
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+FROM php:8.2-apache
+COPY . /var/www/html/
 EXPOSE 80
