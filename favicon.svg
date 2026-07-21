@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1b3a8a"/>
+  <rect x="4" y="4" width="56" height="56" rx="11" fill="#0f2460"/>
+  <!-- Water drop shape -->
+  <path d="M32 14 C32 14 20 26 20 35 C20 42 25.4 48 32 48 C38.6 48 44 42 44 35 C44 26 32 14 32 14Z" fill="#60a5fa" opacity="0.9"/>
+  <!-- SME text -->
+  <text x="32" y="42" font-family="Arial Black,sans-serif" font-size="13" font-weight="900" text-anchor="middle" fill="#ffffff" letter-spacing="-1">SME</text>
+</svg>
