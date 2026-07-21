@@ -1132,9 +1132,9 @@
       <div class="footer-bottom">
         <span>© 2026 SME Fontanería y Reformas 24h · Valencia. Todos los derechos reservados.</span>
         <div style="display:flex;gap:16px;">
-          <a href="#">Política de privacidad</a>
-          <a href="#">Aviso legal</a>
-          <a href="#">Cookies</a>
+          <a href="/politica-privacidad">Política de privacidad</a>
+          <a href="/aviso-legal">Aviso legal</a>
+          <a href="/politica-cookies">Cookies</a>
         </div>
       </div>
     </div>
@@ -1185,6 +1185,73 @@
         }
       });
     }
+  </script>
+
+  <!-- COOKIE BANNER -->
+  <style>
+    #sme-cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: #0f2460;
+      color: #fff;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 -4px 24px rgba(0,0,0,.35);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    #sme-cookie-banner p { margin: 0; color: rgba(255,255,255,.85); max-width: 640px; }
+    #sme-cookie-banner a { color: #f97316; text-underline-offset: 2px; }
+    .sme-cb-btns { display: flex; gap: 10px; flex-shrink: 0; }
+    #sme-cb-accept {
+      background: #f97316; color: #fff; border: none;
+      padding: 10px 22px; border-radius: 8px; font-weight: 700;
+      font-size: 14px; cursor: pointer; white-space: nowrap;
+    }
+    #sme-cb-reject {
+      background: transparent; color: rgba(255,255,255,.7);
+      border: 1px solid rgba(255,255,255,.3);
+      padding: 10px 18px; border-radius: 8px; font-size: 14px;
+      cursor: pointer; white-space: nowrap;
+    }
+    #sme-cb-accept:hover { background: #ea6c0a; }
+    #sme-cb-reject:hover { background: rgba(255,255,255,.08); color: #fff; }
+    @media (max-width: 600px) {
+      #sme-cookie-banner { flex-direction: column; align-items: flex-start; padding-bottom: 80px; }
+      .sme-cb-btns { width: 100%; }
+      #sme-cb-accept, #sme-cb-reject { flex: 1; text-align: center; }
+    }
+  </style>
+  <div id="sme-cookie-banner" role="dialog" aria-label="Aviso de cookies" style="display:none">
+    <p>Usamos cookies técnicas necesarias para el funcionamiento del sitio. No usamos cookies de seguimiento ni publicidad. <a href="/politica-cookies">Más información</a></p>
+    <div class="sme-cb-btns">
+      <button id="sme-cb-reject">Rechazar</button>
+      <button id="sme-cb-accept">Aceptar</button>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var KEY = 'sme_cookie_consent';
+      if (!localStorage.getItem(KEY)) {
+        document.getElementById('sme-cookie-banner').style.display = 'flex';
+      }
+      document.getElementById('sme-cb-accept').addEventListener('click', function() {
+        localStorage.setItem(KEY, 'accepted');
+        document.getElementById('sme-cookie-banner').style.display = 'none';
+      });
+      document.getElementById('sme-cb-reject').addEventListener('click', function() {
+        localStorage.setItem(KEY, 'rejected');
+        document.getElementById('sme-cookie-banner').style.display = 'none';
+      });
+    })();
   </script>
 
 </body>
