@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Cookies | SME Fontanería 24h</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="canonical" href="https://smefontaneria24h.com/politica-cookies">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #f8faff;
+      color: #1a1a2e;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* HEADER */
+    header {
+      background: #0f2460;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    header .brand {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    header .back-link {
+      color: #f97316;
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    header .back-link:hover { color: #fb923c; }
+    header .back-link::before { content: '←'; font-size: 1rem; }
+
+    /* HERO */
+    .page-hero {
+      background: linear-gradient(135deg, #1b3a8a 0%, #0f2460 100%);
+      color: #fff;
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+    }
+    .page-hero p {
+      font-size: 0.97rem;
+      opacity: 0.82;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.2rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    main {
+      padding: 3rem 0 4rem;
+    }
+
+    /* INFO BAR */
+    .info-bar {
+      background: #e8eef9;
+      border-left: 4px solid #1b3a8a;
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+      color: #1b3a8a;
+    }
+    .info-bar strong { display: block; margin-bottom: 0.2rem; font-size: 0.95rem; }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 2.8rem;
+    }
+    .section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #1b3a8a;
+      border-bottom: 2px solid #f97316;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.1rem;
+    }
+    .section h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0f2460;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .section p { margin-bottom: 0.85rem; color: #2d3748; }
+    .section ul, .section ol {
+      margin: 0.5rem 0 0.85rem 1.4rem;
+      color: #2d3748;
+    }
+    .section li { margin-bottom: 0.4rem; }
+
+    /* TAG CHIPS */
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      margin-right: 0.3rem;
+    }
+    .tag-yes { background: #dcfce7; color: #166534; }
+    .tag-no  { background: #fee2e2; color: #991b1b; }
+
+    /* COOKIE TABLE */
+    .table-wrap { overflow-x: auto; margin: 1rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      min-width: 560px;
+    }
+    thead {
+      background: #1b3a8a;
+      color: #fff;
+    }
+    thead th {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+    tbody tr { border-bottom: 1px solid #e2e8f0; }
+    tbody tr:nth-child(even) { background: #f0f5ff; }
+    tbody td {
+      padding: 0.7rem 1rem;
+      vertical-align: top;
+      color: #2d3748;
+    }
+    tbody td:first-child { font-family: 'Courier New', monospace; font-size: 0.85rem; color: #1b3a8a; font-weight: 600; }
+
+    /* BROWSER BLOCKS */
+    .browser-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .browser-card {
+      background: #fff;
+      border: 1px solid #dde6f7;
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+    }
+    .browser-card h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0f2460;
+      margin-bottom: 0.5rem;
+    }
+    .browser-card ol {
+      margin-left: 1.2rem;
+      color: #4a5568;
+      font-size: 0.88rem;
+    }
+    .browser-card li { margin-bottom: 0.3rem; }
+
+    /* MANAGE BUTTON */
+    .manage-box {
+      background: #fff;
+      border: 2px solid #f97316;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin: 1.2rem 0;
+      text-align: center;
+    }
+    .manage-box p { margin-bottom: 1rem; color: #4a5568; font-size: 0.95rem; }
+    .btn-manage {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      font-size: 0.97rem;
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.02em;
+    }
+    .btn-manage:hover { background: #ea6a0d; transform: translateY(-1px); }
+    .btn-manage:active { transform: translateY(0); }
+
+    /* CONTACT CARD */
+    .contact-card {
+      background: #fff;
+      border: 1px solid #dde6f7;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 0.75rem;
+    }
+    .contact-card p { margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .contact-card a { color: #1b3a8a; font-weight: 600; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: #0f2460;
+      color: #a0b0cc;
+      text-align: center;
+      padding: 1.5rem 1.25rem;
+      font-size: 0.875rem;
+    }
+    footer p { margin-bottom: 0.4rem; }
+    footer a {
+      color: #f97316;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .page-hero { padding: 2rem 1rem 1.75rem; }
+      main { padding: 2rem 0 3rem; }
+      .section h2 { font-size: 1.15rem; }
+      .manage-box { padding: 1.1rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="/" class="brand">SME Fontanería 24h</a>
+  <a href="/" class="back-link">Volver al inicio</a>
+</header>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="badge">Aviso legal</div>
+  <h1>Política de Cookies</h1>
+  <p>Información completa sobre las cookies utilizadas en este sitio web, de acuerdo con el RGPD y la LSSI-CE.</p>
+</div>
+
+<!-- MAIN -->
+<main>
+  <div class="container">
+
+    <!-- INFO BAR -->
+    <div class="info-bar">
+      <strong>Datos identificativos del titular</strong>
+      Titular: Sidi Mahmud Eidda &nbsp;|&nbsp; NIF: Z0121240N &nbsp;|&nbsp;
+      Web: smefontaneria24h.com &nbsp;|&nbsp; Email: vadilyissabelaid@gmail.com<br>
+      Última actualización: julio de 2025
+    </div>
+
+    <!-- 1. QUÉ SON LAS COOKIES -->
+    <div class="section">
+      <h2>1. ¿Qué son las cookies?</h2>
+      <p>
+        Las cookies son pequeños ficheros de texto que un sitio web guarda en el navegador del usuario cuando este lo visita. Su función principal es recordar información entre páginas y visitas, de modo que la experiencia de navegación sea más fluida y eficiente.
+      </p>
+      <p>
+        Además de los ficheros de texto clásicos, existen tecnologías similares como el <strong>almacenamiento local (localStorage)</strong>, el almacenamiento de sesión (sessionStorage) y los píxeles de seguimiento, que cumplen funciones análogas. En la presente política, cuando hablamos de "cookies" nos referimos a todas estas tecnologías.
+      </p>
+      <p>
+        La normativa aplicable en España es el <strong>Reglamento General de Protección de Datos (RGPD — UE 2016/679)</strong> y la <strong>Ley 34/2002, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE)</strong>, que exigen informar al usuario de manera clara y transparente sobre las cookies utilizadas y, cuando sea necesario, obtener su consentimiento previo.
+      </p>
+    </div>
+
+    <!-- 2. TIPOS DE COOKIES -->
+    <div class="section">
+      <h2>2. Tipos de cookies según su finalidad</h2>
+
+      <h3>2.1 Cookies técnicas o estrictamente necesarias <span class="tag tag-yes">Usamos</span></h3>
+      <p>
+        Son imprescindibles para el funcionamiento básico del sitio web. Sin ellas, el sitio no podría prestarse correctamente. No requieren consentimiento del usuario porque su base legal es el interés legítimo del prestador de servicios (art. 22.2 LSSI-CE y considerando 47 RGPD).
+      </p>
+      <p>
+        En este sitio web utilizamos <strong>una sola cookie técnica propia</strong>: <code>sme_cookie_consent</code>, cuya finalidad es recordar si el usuario ha interactuado con el banner de cookies para no volvérselo a mostrar en cada visita.
+      </p>
+
+      <h3>2.2 Cookies analíticas o de medición <span class="tag tag-no">No usamos</span></h3>
+      <p>
+        Permiten analizar el comportamiento de los usuarios dentro del sitio web (páginas visitadas, tiempo de permanencia, origen del tráfico, etc.) con fines estadísticos. Herramientas habituales son Google Analytics, Matomo o Hotjar. <strong>Actualmente este sitio web NO utiliza ninguna cookie analítica ni herramienta de medición de tráfico.</strong>
+      </p>
+
+      <h3>2.3 Cookies publicitarias o de marketing <span class="tag tag-no">No usamos</span></h3>
+      <p>
+        Se emplean para mostrar publicidad personalizada o rastrear al usuario en otras webs para crear perfiles de intereses. <strong>Este sitio web NO utiliza cookies publicitarias, píxeles de conversión ni tecnologías de retargeting de ningún tipo.</strong>
+      </p>
+
+      <h3>2.4 Cookies de terceros <span class="tag tag-no">No usamos</span></h3>
+      <p>
+        Son cookies instaladas por dominios distintos al del sitio visitado (redes sociales, proveedores de análisis, plataformas de anuncios, etc.). <strong>Este sitio web NO integra servicios de terceros que instalen cookies.</strong> No se cargan scripts externos de Google, Meta, Twitter, YouTube ni ningún proveedor similar.
+      </p>
+    </div>
+
+    <!-- 3. TABLA DE COOKIES -->
+    <div class="section">
+      <h2>3. Tabla de cookies utilizadas en este sitio web</h2>
+      <p>A continuación se detalla la única cookie activa en este sitio web:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Tipo</th>
+              <th>Finalidad</th>
+              <th>Duración</th>
+              <th>Proveedor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>sme_cookie_consent</td>
+              <td>Técnica / Necesaria</td>
+              <td>Almacena la decisión del usuario respecto al banner de cookies (aceptado o rechazado) para no volver a mostrárselo en visitas posteriores.</td>
+              <td>365 días</td>
+              <td>smefontaneria24h.com (propio)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.875rem; color:#718096; margin-top:0.5rem;">
+        Esta información se almacena en el <strong>localStorage</strong> del navegador del usuario, no en una cookie HTTP tradicional, pero tiene la misma consideración legal a efectos de la LSSI-CE.
+      </p>
+    </div>
+
+    <!-- 4. GESTIONAR COOKIES EN EL NAVEGADOR -->
+    <div class="section">
+      <h2>4. Cómo gestionar o deshabilitar las cookies en tu navegador</h2>
+      <p>
+        Puedes configurar tu navegador para aceptar, rechazar o eliminar cookies en cualquier momento. Ten en cuenta que deshabilitar todas las cookies puede afectar al funcionamiento de algunos sitios web.
+      </p>
+      <p>
+        A continuación encontrarás las instrucciones para los navegadores más comunes:
+      </p>
+      <div class="browser-grid">
+
+        <div class="browser-card">
+          <h4>Google Chrome</h4>
+          <ol>
+            <li>Menú (⋮) → <em>Configuración</em></li>
+            <li><em>Privacidad y seguridad</em></li>
+            <li><em>Cookies y otros datos de sitios</em></li>
+            <li>Selecciona tu preferencia o borra los datos existentes.</li>
+          </ol>
+          <p style="font-size:0.82rem;margin-top:0.5rem;color:#718096;">
+            Más info: <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" style="color:#1b3a8a;">support.google.com</a>
+          </p>
+        </div>
+
+        <div class="browser-card">
+          <h4>Mozilla Firefox</h4>
+          <ol>
+            <li>Menú (☰) → <em>Ajustes</em></li>
+            <li><em>Privacidad &amp; Seguridad</em></li>
+            <li>Sección <em>Cookies y datos del sitio</em></li>
+            <li>Elige el nivel de protección o elimina datos.</li>
+          </ol>
+          <p style="font-size:0.82rem;margin-top:0.5rem;color:#718096;">
+            Más info: <a href="https://support.mozilla.org/es/kb/limpiar-cookies-y-datos-de-sitios-en-firefox" target="_blank" rel="noopener noreferrer" style="color:#1b3a8a;">support.mozilla.org</a>
+          </p>
+        </div>
+
+        <div class="browser-card">
+          <h4>Apple Safari</h4>
+          <ol>
+            <li><em>Safari</em> → <em>Preferencias</em> (Mac) o <em>Ajustes</em> (iOS)</li>
+            <li>Pestaña <em>Privacidad</em></li>
+            <li>Activa <em>Bloquear todas las cookies</em> o gestiona excepciones.</li>
+            <li>Para borrar: <em>Gestionar datos de sitios web</em>.</li>
+          </ol>
+          <p style="font-size:0.82rem;margin-top:0.5rem;color:#718096;">
+            Más info: <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" style="color:#1b3a8a;">support.apple.com</a>
+          </p>
+        </div>
+
+        <div class="browser-card">
+          <h4>Microsoft Edge</h4>
+          <ol>
+            <li>Menú (…) → <em>Configuración</em></li>
+            <li><em>Privacidad, búsqueda y servicios</em></li>
+            <li>Sección <em>Borrar datos de exploración</em></li>
+            <li>Marca <em>Cookies y datos de sitio</em> y confirma.</li>
+          </ol>
+          <p style="font-size:0.82rem;margin-top:0.5rem;color:#718096;">
+            Más info: <a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" style="color:#1b3a8a;">support.microsoft.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Si deseas eliminar únicamente los datos de almacenamiento local de este sitio web sin afectar al resto de tu configuración, también puedes utilizar las herramientas de desarrollo del navegador (F12 → <em>Aplicación</em> o <em>Almacenamiento</em> → <em>Local Storage</em>) y borrar la clave <code>sme_cookie_consent</code>.
+      </p>
+    </div>
+
+    <!-- 5. RETIRAR CONSENTIMIENTO -->
+    <div class="section">
+      <h2>5. Cómo retirar tu consentimiento</h2>
+      <p>
+        Tienes derecho a retirar tu consentimiento en cualquier momento, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su retirada (art. 7.3 RGPD).
+      </p>
+      <p>
+        Puedes hacerlo de forma inmediata pulsando el botón de abajo. Esta acción eliminará el registro de tu decisión y, al recargar la página, el banner de cookies volverá a aparecer para que puedas revisar y modificar tus preferencias.
+      </p>
+
+      <div class="manage-box">
+        <p>
+          Haz clic para borrar tus preferencias de cookies guardadas en este sitio. El banner de consentimiento se mostrará de nuevo para que puedas elegir.
+        </p>
+        <button class="btn-manage" onclick="resetCookieConsent()">
+          Gestionar mis preferencias de cookies
+        </button>
+      </div>
+
+      <p style="font-size:0.875rem; color:#718096;">
+        Si el botón no funciona (por ejemplo, si tienes JavaScript desactivado), puedes eliminar manualmente la clave <code>sme_cookie_consent</code> del localStorage de tu navegador siguiendo las instrucciones del apartado anterior.
+      </p>
+    </div>
+
+    <!-- 6. ACTUALIZACIONES -->
+    <div class="section">
+      <h2>6. Actualizaciones de esta política</h2>
+      <p>
+        SME Fontanería 24h se reserva el derecho de actualizar esta Política de Cookies cuando lo considere oportuno, ya sea por cambios normativos, incorporación de nuevos servicios o modificaciones técnicas del sitio web.
+      </p>
+      <p>
+        La fecha de la última actualización siempre figurará al inicio de este documento. Te recomendamos revisarla periódicamente. Si se produjeran cambios sustanciales que afecten a cookies que requieran consentimiento, se informará al usuario a través del banner de cookies o por cualquier otro medio adecuado.
+      </p>
+      <p>
+        El uso continuado del sitio web tras la publicación de cambios en esta política se entenderá como aceptación de los mismos, sin perjuicio de los derechos que la normativa vigente reconoce al usuario.
+      </p>
+    </div>
+
+    <!-- 7. CONTACTO -->
+    <div class="section">
+      <h2>7. Contacto y ejercicio de derechos</h2>
+      <p>
+        Si tienes cualquier duda sobre esta Política de Cookies, sobre el tratamiento de tus datos personales, o deseas ejercer los derechos que te reconoce la normativa vigente (acceso, rectificación, supresión, limitación, portabilidad u oposición), puedes ponerte en contacto con el titular del sitio web:
+      </p>
+      <div class="contact-card">
+        <p><strong>Sidi Mahmud Eidda</strong></p>
+        <p>NIF: Z0121240N</p>
+        <p>Web: <a href="https://smefontaneria24h.com">smefontaneria24h.com</a></p>
+        <p>Email: <a href="mailto:vadilyissabelaid@gmail.com">vadilyissabelaid@gmail.com</a></p>
+      </div>
+      <p style="margin-top:1rem;">
+        Si consideras que el tratamiento de tus datos no se ajusta a la normativa vigente, tienes derecho a presentar una reclamación ante la autoridad de control española: la <strong>Agencia Española de Protección de Datos (AEPD)</strong>, a través de su sede electrónica en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" style="color:#1b3a8a; font-weight:600;">www.aepd.es</a>.
+      </p>
+    </div>
+
+  </div><!-- /container -->
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 SME Fontanería 24h · Sidi Mahmud Eidda · NIF Z0121240N</p>
+  <p>
+    <a href="/aviso-legal">Aviso Legal</a>
+    <a href="/politica-privacidad">Política de Privacidad</a>
+    <a href="/politica-cookies">Política de Cookies</a>
+  </p>
+</footer>
+
+<script>
+  function resetCookieConsent() {
+    try {
+      localStorage.removeItem('sme_cookie_consent');
+      window.location.reload();
+    } catch (e) {
+      alert('No se pudo eliminar la preferencia. Por favor, borra las cookies de este sitio manualmente desde la configuración de tu navegador.');
+    }
+  }
+</script>
+
+</body>
+</html>

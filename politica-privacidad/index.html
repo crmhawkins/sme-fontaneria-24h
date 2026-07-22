@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | SME Fontanería 24h</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="canonical" href="https://smefontaneria24h.com/politica-privacidad">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul:    #1b3a8a;
+      --naranja: #f97316;
+      --oscuro:  #0f2460;
+      --fondo:   #f8faff;
+      --texto:   #1e293b;
+      --suave:   #64748b;
+      --borde:   #dde5f5;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--fondo);
+      color: var(--texto);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    header {
+      background: var(--oscuro);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .site-name span {
+      color: var(--naranja);
+    }
+
+    .back-link {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover { color: var(--naranja); }
+
+    .back-link::before { content: '←'; font-size: 1rem; }
+
+    /* ── HERO STRIPE ────────────────────────────────────── */
+    .page-hero {
+      background: linear-gradient(135deg, var(--azul) 0%, var(--oscuro) 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .page-hero p {
+      font-size: 0.95rem;
+      color: #bfdbfe;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── MAIN WRAPPER ───────────────────────────────────── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    /* ── SECCIÓN ────────────────────────────────────────── */
+    .section {
+      background: #fff;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(27,58,138,.06);
+    }
+
+    .section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--azul);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--naranja);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .icon {
+      width: 28px;
+      height: 28px;
+      background: var(--naranja);
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .section p { margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    .section ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .section ul li {
+      margin-bottom: 6px;
+    }
+
+    .section ul li:last-child { margin-bottom: 0; }
+
+    .section a {
+      color: var(--azul);
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
+    .section a:hover { color: var(--naranja); }
+
+    /* Tabla responsable */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .info-table tr { border-bottom: 1px solid var(--borde); }
+    .info-table tr:last-child { border-bottom: none; }
+
+    .info-table th {
+      text-align: left;
+      padding: 9px 12px;
+      background: var(--fondo);
+      color: var(--suave);
+      font-weight: 600;
+      width: 38%;
+      vertical-align: top;
+    }
+
+    .info-table td {
+      padding: 9px 12px;
+      vertical-align: top;
+    }
+
+    /* Caja derechos */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .right-item {
+      background: var(--fondo);
+      border: 1px solid var(--borde);
+      border-left: 4px solid var(--naranja);
+      border-radius: 6px;
+      padding: 12px 14px;
+    }
+
+    .right-item strong {
+      display: block;
+      color: var(--azul);
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .right-item p {
+      font-size: 0.85rem;
+      color: var(--suave);
+      margin: 0;
+    }
+
+    /* Caja aviso AEPD */
+    .aepd-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .aepd-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .aepd-box p { margin: 0; font-size: 0.95rem; }
+
+    /* Base legal badges */
+    .base-item {
+      background: var(--fondo);
+      border: 1px solid var(--borde);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+
+    .base-item:last-child { margin-bottom: 0; }
+
+    .base-badge {
+      display: inline-block;
+      background: var(--azul);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      letter-spacing: 0.03em;
+    }
+
+    .base-item p { margin: 0; font-size: 0.95rem; }
+
+    /* Actualización fecha */
+    .update-note {
+      font-size: 0.85rem;
+      color: var(--suave);
+      text-align: center;
+      margin-top: -8px;
+      margin-bottom: 24px;
+    }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer {
+      background: var(--oscuro);
+      color: #94a3b8;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.875rem;
+    }
+
+    footer p { margin-bottom: 8px; }
+    footer p:last-child { margin-bottom: 0; }
+
+    footer a {
+      color: #bfdbfe;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.2s;
+    }
+
+    footer a:hover { color: var(--naranja); }
+
+    footer .sep { color: #475569; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .section { padding: 24px 18px; }
+      .info-table th, .info-table td { padding: 8px 8px; }
+      .info-table th { width: 42%; }
+      .aepd-box { flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ───────────────────────────────────────────── -->
+  <header>
+    <div class="site-name">SME Fontanería <span>24h</span></div>
+    <a href="/" class="back-link">Volver al inicio</a>
+  </header>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <div class="page-hero">
+    <h1>Política de Privacidad</h1>
+    <p>Información sobre el tratamiento de sus datos personales conforme al Reglamento General de Protección de Datos (RGPD) y la LOPDGDD.</p>
+  </div>
+
+  <!-- ── CONTENIDO PRINCIPAL ──────────────────────────────── -->
+  <main>
+
+    <p class="update-note">Última actualización: 17 de julio de 2026</p>
+
+    <!-- 1. RESPONSABLE DEL TRATAMIENTO -->
+    <div class="section">
+      <h2><span class="icon">1</span>Responsable del Tratamiento</h2>
+      <p>En cumplimiento del artículo 13 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD), y de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que los datos personales que nos facilite serán tratados bajo la responsabilidad de:</p>
+      <table class="info-table">
+        <tr>
+          <th>Responsable</th>
+          <td>Sidi Mahmud Eidda</td>
+        </tr>
+        <tr>
+          <th>NIF</th>
+          <td>Z0121240N</td>
+        </tr>
+        <tr>
+          <th>Actividad</th>
+          <td>Fontanería y reformas</td>
+        </tr>
+        <tr>
+          <th>Dirección</th>
+          <td>Carrer Camí Caputxins 11, P-03, Puerta 12, 46850 L'Olleria, Valencia</td>
+        </tr>
+        <tr>
+          <th>Teléfono</th>
+          <td><a href="tel:+34624175283">624 17 52 83</a></td>
+        </tr>
+        <tr>
+          <th>Correo electrónico</th>
+          <td><a href="mailto:vadilyissabelaid@gmail.com">vadilyissabelaid@gmail.com</a></td>
+        </tr>
+        <tr>
+          <th>Sitio web</th>
+          <td><a href="https://smefontaneria24h.com" target="_blank" rel="noopener">https://smefontaneria24h.com</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 2. DATOS QUE TRATAMOS -->
+    <div class="section">
+      <h2><span class="icon">2</span>Datos Personales que Tratamos</h2>
+      <p>Dependiendo de la forma en que interactúe con nosotros, podemos tratar las siguientes categorías de datos personales:</p>
+      <ul>
+        <li><strong>Datos identificativos:</strong> nombre y apellidos.</li>
+        <li><strong>Datos de contacto:</strong> dirección postal, número de teléfono y dirección de correo electrónico.</li>
+        <li><strong>Datos de navegación:</strong> dirección IP, tipo de navegador, páginas visitadas y tiempo de permanencia (cuando proceda mediante cookies técnicas).</li>
+        <li><strong>Datos de la relación comercial:</strong> descripción de la avería o trabajo solicitado, presupuestos, albaranes y facturas emitidas.</li>
+      </ul>
+      <p>No tratamos categorías especiales de datos en el sentido del artículo 9 del RGPD (datos de salud, origen racial, creencias religiosas, etc.).</p>
+    </div>
+
+    <!-- 3. FINALIDADES DEL TRATAMIENTO -->
+    <div class="section">
+      <h2><span class="icon">3</span>Finalidades del Tratamiento</h2>
+      <p>Sus datos personales son tratados para las siguientes finalidades:</p>
+      <ul>
+        <li><strong>Atención de solicitudes y consultas:</strong> gestionar los mensajes recibidos a través del formulario de contacto del sitio web, por correo electrónico o por teléfono, y darles la respuesta adecuada.</li>
+        <li><strong>Prestación del servicio contratado:</strong> coordinar, ejecutar y hacer seguimiento de los trabajos de fontanería y reformas solicitados, así como elaborar presupuestos y emitir las correspondientes facturas.</li>
+        <li><strong>Gestión de clientes:</strong> mantener un registro actualizado de clientes y del histórico de trabajos realizados para poder ofrecer un servicio de mayor calidad, garantías y mantenimiento.</li>
+        <li><strong>Facturación y cumplimiento de obligaciones contables y fiscales:</strong> conservar la documentación contable y fiscal requerida por la normativa vigente (Ley 58/2003 General Tributaria y demás legislación aplicable).</li>
+        <li><strong>Envío de comunicaciones comerciales propias:</strong> remitir información sobre ofertas, promociones o servicios relacionados con la actividad, únicamente cuando el interesado haya prestado su consentimiento expreso para ello.</li>
+      </ul>
+    </div>
+
+    <!-- 4. BASE JURÍDICA -->
+    <div class="section">
+      <h2><span class="icon">4</span>Base Jurídica del Tratamiento</h2>
+      <p>La legitimación para el tratamiento de sus datos descansa en las siguientes bases jurídicas del artículo 6 del RGPD:</p>
+
+      <div class="base-item">
+        <span class="base-badge">Art. 6.1.a RGPD — Consentimiento</span>
+        <p>Cuando el interesado rellena el formulario de contacto del sitio web o solicita recibir comunicaciones comerciales, presta su consentimiento expreso e inequívoco. Dicho consentimiento puede retirarse en cualquier momento sin que ello afecte a la licitud del tratamiento previo.</p>
+      </div>
+
+      <div class="base-item">
+        <span class="base-badge">Art. 6.1.b RGPD — Ejecución de un contrato</span>
+        <p>Cuando el tratamiento es necesario para la prestación del servicio contratado (trabajos de fontanería, reformas, elaboración de presupuestos, emisión de facturas y atención de garantías).</p>
+      </div>
+
+      <div class="base-item">
+        <span class="base-badge">Art. 6.1.c RGPD — Obligación legal</span>
+        <p>Cuando el tratamiento resulta necesario para cumplir obligaciones legales aplicables al responsable, tales como la conservación de documentos contables y fiscales exigida por la normativa tributaria española.</p>
+      </div>
+
+      <div class="base-item">
+        <span class="base-badge">Art. 6.1.f RGPD — Interés legítimo</span>
+        <p>Para el mantenimiento del histórico de trabajos realizados y la gestión interna de clientes, siempre que dichos intereses no prevalezcan sobre los derechos y libertades fundamentales del interesado.</p>
+      </div>
+    </div>
+
+    <!-- 5. PLAZO DE CONSERVACIÓN -->
+    <div class="section">
+      <h2><span class="icon">5</span>Plazo de Conservación de los Datos</h2>
+      <p>Los datos personales serán conservados durante el tiempo estrictamente necesario para cumplir con la finalidad para la que fueron recabados y, en todo caso, conforme a los plazos establecidos por la normativa aplicable:</p>
+      <ul>
+        <li><strong>Solicitudes y consultas sin contratación:</strong> hasta 1 año desde la última comunicación, salvo que el interesado solicite su supresión antes.</li>
+        <li><strong>Datos derivados de la relación contractual:</strong> durante la vigencia de la relación y, una vez finalizada esta, durante un plazo de 5 años para atender posibles reclamaciones civiles (art. 1964 Código Civil) y 4 años en materia fiscal (art. 66 Ley 58/2003 General Tributaria).</li>
+        <li><strong>Facturas y documentación contable:</strong> 6 años conforme al Código de Comercio (art. 30).</li>
+        <li><strong>Comunicaciones comerciales:</strong> hasta que el interesado retire su consentimiento o solicite la baja.</li>
+      </ul>
+      <p>Transcurridos los plazos indicados, los datos serán eliminados o anonimizados de forma segura.</p>
+    </div>
+
+    <!-- 6. DESTINATARIOS / CESIONES -->
+    <div class="section">
+      <h2><span class="icon">6</span>Destinatarios y Cesiones de Datos</h2>
+      <p>Con carácter general, <strong>no cedemos ni comunicamos sus datos personales a terceros</strong>, salvo en los siguientes supuestos:</p>
+      <ul>
+        <li><strong>Obligación legal:</strong> cuando la cesión resulte exigida por la normativa vigente (administración tributaria, juzgados y tribunales, fuerzas y cuerpos de seguridad, u otras autoridades competentes).</li>
+        <li><strong>Encargados del tratamiento:</strong> proveedores de servicios tecnológicos (alojamiento web, gestión de correo electrónico) que actúan en nombre del responsable con plenas garantías contractuales conforme al artículo 28 del RGPD. Dichos encargados no podrán utilizar los datos para fines distintos a los encargados y están obligados a cumplir la normativa de protección de datos.</li>
+      </ul>
+      <p>No se realizan transferencias internacionales de datos a países terceros fuera del Espacio Económico Europeo, salvo que se garantice un nivel de protección adecuado reconocido por la Comisión Europea.</p>
+    </div>
+
+    <!-- 7. DERECHOS DEL INTERESADO -->
+    <div class="section">
+      <h2><span class="icon">7</span>Sus Derechos en Materia de Protección de Datos</h2>
+      <p>De conformidad con los artículos 15 a 22 del RGPD y los artículos 12 a 18 de la LOPDGDD, usted tiene derecho a:</p>
+      <div class="rights-grid">
+        <div class="right-item">
+          <strong>Acceso</strong>
+          <p>Conocer qué datos personales suyos estamos tratando, de dónde proceden y con qué finalidades.</p>
+        </div>
+        <div class="right-item">
+          <strong>Rectificación</strong>
+          <p>Solicitar la corrección de datos inexactos o incompletos que le conciernan.</p>
+        </div>
+        <div class="right-item">
+          <strong>Supresión («derecho al olvido»)</strong>
+          <p>Solicitar la eliminación de sus datos cuando ya no sean necesarios, haya retirado su consentimiento o el tratamiento sea ilícito.</p>
+        </div>
+        <div class="right-item">
+          <strong>Oposición</strong>
+          <p>Oponerse a que sus datos sean tratados para determinadas finalidades, incluida la elaboración de perfiles.</p>
+        </div>
+        <div class="right-item">
+          <strong>Limitación del tratamiento</strong>
+          <p>Solicitar que suspendamos temporalmente el tratamiento de sus datos en los supuestos previstos por la normativa.</p>
+        </div>
+        <div class="right-item">
+          <strong>Portabilidad</strong>
+          <p>Recibir sus datos en un formato estructurado, de uso común y lectura mecánica, y transmitirlos a otro responsable.</p>
+        </div>
+      </div>
+      <p style="margin-top:16px;">Asimismo, tiene derecho a <strong>no ser objeto de decisiones automatizadas</strong>, incluida la elaboración de perfiles, que produzcan efectos jurídicos o le afecten significativamente de forma similar (art. 22 RGPD). En la actualidad no realizamos este tipo de tratamientos.</p>
+    </div>
+
+    <!-- 8. CÓMO EJERCER SUS DERECHOS -->
+    <div class="section">
+      <h2><span class="icon">8</span>Cómo Ejercer sus Derechos</h2>
+      <p>Puede ejercer cualquiera de los derechos descritos anteriormente, de forma gratuita, mediante solicitud dirigida al responsable del tratamiento por alguno de los siguientes medios:</p>
+      <ul>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:vadilyissabelaid@gmail.com">vadilyissabelaid@gmail.com</a> — indicando en el asunto «Protección de Datos – [Derecho que desea ejercer]».</li>
+        <li><strong>Correo postal:</strong> Sidi Mahmud Eidda — Carrer Camí Caputxins 11, P-03, Puerta 12, 46850 L'Olleria, Valencia — indicando en el sobre «Protección de Datos».</li>
+      </ul>
+      <p>La solicitud debe ir acompañada de una copia de su documento nacional de identidad, pasaporte u otro documento oficial que acredite su identidad. Responderemos a su solicitud en el plazo máximo de un mes desde su recepción, plazo que puede prorrogarse dos meses adicionales en casos de especial complejidad, comunicándoselo debidamente.</p>
+    </div>
+
+    <!-- 9. RECLAMACIÓN ANTE LA AEPD -->
+    <div class="section">
+      <h2><span class="icon">9</span>Derecho a Reclamar ante la Autoridad de Control</h2>
+      <div class="aepd-box">
+        <div class="aepd-icon">🛡️</div>
+        <p>Si considera que sus derechos en materia de protección de datos no han sido atendidos correctamente, tiene derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong>, autoridad de control competente en España. Puede hacerlo a través de su sede electrónica en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> o en su dirección postal: C/ Jorge Juan, 6, 28001 Madrid. No obstante, le animamos a que, antes de acudir a la autoridad de control, se ponga en contacto con nosotros para que podamos resolver cualquier incidencia.</p>
+      </div>
+    </div>
+
+    <!-- 10. MENORES DE EDAD -->
+    <div class="section">
+      <h2><span class="icon">10</span>Menores de Edad</h2>
+      <p>Conforme al artículo 8 del RGPD y al artículo 7 de la LOPDGDD, el tratamiento de datos de menores de <strong>14 años</strong> requiere el consentimiento de sus padres o tutores legales. Este sitio web no está dirigido a menores de 14 años y no recabamos conscientemente datos de este colectivo.</p>
+      <p>Si tiene conocimiento de que un menor de 14 años nos ha facilitado datos personales sin el consentimiento de sus representantes legales, le rogamos que nos lo comunique a la mayor brevedad posible a través de <a href="mailto:vadilyissabelaid@gmail.com">vadilyissabelaid@gmail.com</a> para proceder a su eliminación inmediata.</p>
+    </div>
+
+    <!-- 11. CONFIDENCIALIDAD Y SEGURIDAD -->
+    <div class="section">
+      <h2><span class="icon">11</span>Confidencialidad y Medidas de Seguridad</h2>
+      <p>El responsable del tratamiento adopta las medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo, de conformidad con el artículo 32 del RGPD, con objeto de evitar el acceso no autorizado, la pérdida, la alteración o la divulgación indebida de los datos personales tratados.</p>
+      <p>Todo el personal con acceso a los datos personales está sujeto al deber de confidencialidad y ha recibido la formación adecuada en materia de protección de datos.</p>
+      <p>En caso de producirse una violación de seguridad que suponga un riesgo para sus derechos y libertades, será notificado sin dilación indebida de conformidad con el artículo 34 del RGPD.</p>
+    </div>
+
+    <!-- 12. COOKIES -->
+    <div class="section">
+      <h2><span class="icon">12</span>Cookies</h2>
+      <p>Este sitio web puede utilizar cookies y tecnologías similares. Para obtener información detallada sobre las cookies que utilizamos, su finalidad, duración y forma de gestionarlas o desactivarlas, consulte nuestra <a href="/politica-cookies">Política de Cookies</a>.</p>
+    </div>
+
+    <!-- 13. ACTUALIZACIONES -->
+    <div class="section">
+      <h2><span class="icon">13</span>Actualizaciones de la Política de Privacidad</h2>
+      <p>Esta Política de Privacidad puede modificarse para adaptarse a cambios legislativos, jurisprudenciales, en los servicios ofrecidos o en las condiciones de uso del sitio web. Cualquier modificación será publicada en esta página con indicación de la fecha de actualización.</p>
+      <p>Le recomendamos que revise periódicamente esta página para estar informado de las novedades. En caso de que los cambios afecten de forma significativa a sus derechos, le informaremos por los medios de contacto disponibles.</p>
+      <p>La utilización del sitio web o de nuestros servicios con posterioridad a la publicación de cualquier modificación implicará la aceptación de los términos actualizados.</p>
+      <p><strong>Versión vigente desde:</strong> 17 de julio de 2026.</p>
+    </div>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <p>&copy; 2026 SME Fontanería 24h — Sidi Mahmud Eidda. Todos los derechos reservados.</p>
+    <p>
+      <a href="/aviso-legal">Aviso Legal</a>
+      <span class="sep">|</span>
+      <a href="/politica-privacidad">Política de Privacidad</a>
+      <span class="sep">|</span>
+      <a href="/politica-cookies">Política de Cookies</a>
+    </p>
+  </footer>
+
+</body>
+</html>
