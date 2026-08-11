@@ -257,6 +257,20 @@
       .manage-box { padding: 1.1rem 1rem; }
     }
   </style>
+
+  <!-- Google tag (gtag.js) - Google Ads AW-18329799716 (instalado 2026-08-11 Hawkins) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18329799716"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18329799716');
+    /* Fragmento de telefono: sustituye el numero por el de desvio de Google
+       para medir llamadas desde el sitio web (conversion "Llamada (624175283)") */
+    gtag('config', 'AW-18329799716/z7ZCCNWcjNQcEKSYqqRE', {
+      'phone_conversion_number': '624 17 52 83'
+    });
+  </script>
 </head>
 <body>
 
@@ -507,5 +521,28 @@
   }
 </script>
 
+
+  <!-- Conversiones Google Ads: formulario y WhatsApp (instalado 2026-08-11 Hawkins) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var f = document.getElementById('sme-form');
+      if (f) {
+        f.addEventListener('submit', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18329799716/7tEbCNicjNQcEKSYqqRE',
+            'transport_type': 'beacon'
+          });
+        });
+      }
+      document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
+        a.addEventListener('click', function () {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18329799716/tqY9CNucjNQcEKSYqqRE',
+            'transport_type': 'beacon'
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
